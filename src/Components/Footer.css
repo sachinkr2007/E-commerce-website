@@ -1,0 +1,272 @@
+.footer-root {
+  background-color: #0b1329;
+  color: #94a3b8;
+  margin-top: auto;
+  font-family: var(--font-body);
+}
+
+/* Perks Bar */
+.footer-perks-bar {
+  background: #0f172a;
+  border-top: 1px solid #1e293b;
+  border-bottom: 1px solid #1e293b;
+  padding: 30px 0;
+}
+
+.perks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.perk-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.perk-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(37, 99, 235, 0.15);
+  color: #38bdf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.perk-card h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.perk-card p {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* Main Footer Section */
+.footer-main-section {
+  padding: 55px 0 35px;
+}
+
+.footer-columns-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.3fr;
+  gap: 40px;
+}
+
+/* Brand Column */
+.brand-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.footer-brand .brand-title {
+  color: #ffffff;
+}
+
+.footer-brand .brand-tagline {
+  color: #94a3b8;
+}
+
+.footer-about-text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+/* Column General */
+.col-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.col-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 32px;
+  height: 2px;
+  background: #2563eb;
+  border-radius: 2px;
+}
+
+.footer-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-nav-list a {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.footer-nav-list a:hover {
+  color: #38bdf8;
+  transform: translateX(4px);
+}
+
+/* Contact Items */
+.footer-contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  transition: color 0.2s ease;
+}
+
+.contact-link:hover:not(.static) {
+  color: #38bdf8;
+}
+
+.c-icon {
+  font-size: 16px;
+  color: #38bdf8;
+  flex-shrink: 0;
+}
+
+/* Newsletter */
+.newsletter-box {
+  background: #131c38;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.newsletter-box h4 {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.newsletter-box p {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  margin-bottom: 12px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 8px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  background: #0f172a;
+  border: 1px solid #334155;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.newsletter-form input:focus {
+  border-color: #38bdf8;
+}
+
+.newsletter-form button {
+  background: #2563eb;
+  color: #ffffff;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.newsletter-form button:hover {
+  background: #1d4ed8;
+}
+
+/* Bottom Bar */
+.footer-bottom-signature-bar {
+  background: #060b18;
+  border-top: 1px solid #1e293b;
+  padding: 20px 0;
+}
+
+.footer-bottom-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.copyright-notice {
+  font-size: 0.88rem;
+  color: #64748b;
+}
+
+.developer-signature-text {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.dev-signature-link {
+  color: #38bdf8;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.dev-signature-link:hover {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .footer-columns-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-columns-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .footer-bottom-flex {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
